@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #6a82fb, #fc5c7d); /* Smooth gradient background */
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 50rem;
+  height: 20rem;
+  position: relative;
+}
+
+.svg-container {
+  z-index: 2;
+  position: absolute;
+}
+
+.mo-container {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.lttr {
+  fill: #a5b9c7;
+}
+
+.sound {
+  position: fixed;
+  color: #ffffff;
+  font-size: 2rem;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fc5c7d;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sound:hover {
+  background-color: #6a82fb;
+  transform: scale(1.1);
+}
+
+.sound--off {
+  text-decoration: line-through;
+}
